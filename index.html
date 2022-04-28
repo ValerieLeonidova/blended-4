@@ -369,7 +369,9 @@
             <li class="address-item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="address-item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
+          </address>
        </div>
+       <!-- connect -->
           <div class="connect">
             <p class="connect-title">присоединяйтесь</p>
             <ul class="connect-list list">
@@ -406,12 +408,22 @@
               </li>
             </ul>
           </div>
-        </address>
+          <!-- subscribe -->
+          <div class="subscribe-field">
+            <label class="subscribe-title" for="subscribe">Подпишитесь на рассылку</label>
+              <input class="subscribe-email" type="email" name="subscribe" id="subscribe" placeholder="E-mail">
+            
+            <button class="subscribe-btn" type="submit">Подписаться
+              <svg class="subscribe-icon" width="24px" height="24px">
+                <use href="./images/icon/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
       </div>
     </footer>
 
     <!-- Modal window -->
-      <div data-modal class="backdrop">
+      <div data-modal class="backdrop is-hidden">
         <form name="callback-form" class="modal">
           <button data-modal-close type="button" class="modal-btn">
             <svg width="14px" height="14px">
