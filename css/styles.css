@@ -924,7 +924,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  /* padding-left: 25px; */
 }
 
 .license-check {
@@ -941,8 +940,6 @@ body {
 }
 
 .check-box {
-  /* position: absolute; */
-  /* left: 52px; */
   margin-right: 8px;
   width: 16px;
   height: 15px;
