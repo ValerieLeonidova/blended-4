@@ -424,14 +424,12 @@ body {
   height: 40px;
   fill: #afb1b8;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--focus-color);
   fill: var(--bg-color-main);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----------------------CLIENTS----------------------------------- */
@@ -607,6 +605,8 @@ body {
   height: 50px;
   top: 36px;
   left: 368px;
+
+  cursor: pointer;
 
   font-weight: 700;
   font-size: 16px;
@@ -860,7 +860,7 @@ body {
 .input-email {
   width: 100%;
   height: 40px;
-  padding-left: 42px;
+  padding: 11px 12px 11px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -950,12 +950,17 @@ body {
   background-image: url(../images/icon/check-box-on.svg);
 }
 
-/* .license-check:focus + .check-box {
+.license-check:focus + .check-box {
   box-shadow: 0 0 0 2px rgba(2, 151, 121, 0.9);
-} */
+}
 
 .license-link {
   color: var(--focus-color);
+}
+
+.license-link:hover,
+.license-link:focus {
+  text-decoration: none;
 }
 
 .submit-btn {
