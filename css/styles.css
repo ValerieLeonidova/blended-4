@@ -951,7 +951,7 @@ body {
 }
 
 .license-check:focus + .check-box {
-  box-shadow: 0 0 0 2px rgba(2, 151, 121, 0.9);
+  box-shadow: 0 0 8px rgb(0, 0, 0, 0.5);
 }
 
 .license-link {
