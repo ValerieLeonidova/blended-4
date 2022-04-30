@@ -18,6 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+    rel="stylesheet"
+    href="./css/animate.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -25,7 +30,7 @@
     <header class="page-header">
       <div class="conteiner main-nav">
         <nav class="nav-block">
-          <a href="./index.html" class="logo link"><span class="logo-blue">Web</span>Studio</a>
+          <a href="./index.html" class="logo link animate__animated animate__bounce"><span class="logo-blue">Web</span>Studio</a>
           <ul class="site-nav list">
             <li class="item"><a class="link current" href="./index.html">Студия</a></li>
             <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
@@ -56,7 +61,7 @@
       <!-- Hero -->
       <section class="hero overlay">
         <div class="conteiner">
-          <h1 class="hero-headlines">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero-headlines wow animate__animated animate__zoomIn">Эффективные решения для вашего бизнеса</h1>
           <button data-modal-open type="button" class="button">Заказать услугу</button>
         </div>
       </section>
@@ -65,7 +70,7 @@
       <section class="section-specifics">
         <div class="conteiner">
           <ul class="features-list list">
-            <li class="features-item">
+            <li class="features-item wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
               <div class="features-item-logo">
                 <svg width="70px" height="70px">
                   <use href="./images/icon/symbol-defs.svg#icon-antenna"></use>
@@ -75,7 +80,7 @@
               <p class="section-desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
 
-            <li class="features-item">
+            <li class="features-item wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
               <div class="features-item-logo">
                 <svg width="70px" height="70px">
                   <use href="./images/icon/symbol-defs.svg#icon-clock"></use>
@@ -85,7 +90,7 @@
               <p class="section-desc">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
 
-            <li class="features-item">
+            <li class="features-item wow animate__animated animate__fadeInRight" data-wow-duration="1.5s" data-wow-offset="200">
               <div class="features-item-logo">
                 <svg width="70px" height="70px">
                   <use href="./images/icon/symbol-defs.svg#icon-diagram"></use>
@@ -95,7 +100,7 @@
               <p class="section-desc">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
 
-            <li class="features-item">
+            <li class="features-item wow animate__animated animate__fadeInRight" data-wow-duration="1.5s" data-wow-offset="300">
               <div class="features-item-logo">
                 <svg width="70px" height="70px">
                   <use href="./images/icon/symbol-defs.svg#icon-astronaut"></use>
@@ -111,20 +116,32 @@
       <section class="section">
         <div class="conteiner">
           <h2 class="section-headlines title-work">Чем мы занимаемся</h2>
-          <ul class="work-examples list">
-            <li class="work-examples-item">
+          <div class="work-examples list">
+            <div class="work-examples-item">
               <img class="work-examples-pic" src="./images/box_1.jpg" alt="Адаптивная верстка сайтов" width="370" />
               <p class="work-examples-title">Десктопные приложения</p>
-            </li>
-            <li class="work-examples-item">
+            </div>
+            <div class="work-examples-item">
               <img class="work-examples-pic" src="./images/box_2.jpg" alt="Адаптивная верстка сайтов" width="370" />
               <p class="work-examples-title">Мобильные приложения</p>
-            </li>
-            <li class="work-examples-item">
+            </div>
+            <div class="work-examples-item">
               <img class="work-examples-pic" src="./images/box_3.jpg" alt="Адаптивная верстка сайтов" width="370" />
               <p class="work-examples-title">Дизайнерские решения</p>
-            </li>
-          </ul>
+            </div>
+            <div class="work-examples-item">
+              <img class="work-examples-pic" src="./images/box_3.jpg" alt="Адаптивная верстка сайтов" width="370" />
+              <p class="work-examples-title">Дизайнерские решения</p>
+            </div>
+            <div class="work-examples-item">
+              <img class="work-examples-pic" src="./images/box_3.jpg" alt="Адаптивная верстка сайтов" width="370" />
+              <p class="work-examples-title">Дизайнерские решения</p>
+            </div>
+            <div class="work-examples-item">
+              <img class="work-examples-pic" src="./images/box_3.jpg" alt="Адаптивная верстка сайтов" width="370" />
+              <p class="work-examples-title">Дизайнерские решения</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Наша команда -->
@@ -473,6 +490,13 @@
       </form>
     </div>
     <!-- Scripts -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
